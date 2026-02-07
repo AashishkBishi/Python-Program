@@ -54,3 +54,6 @@ class C(B):
 class D(C, B):
     pass
 print(D.mro())
+
+output:[<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
+Mro stand as Method resolving order. This method gives the order of execution of class and methods in the form of list.
