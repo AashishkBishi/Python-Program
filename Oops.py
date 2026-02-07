@@ -22,7 +22,7 @@ print(obj.v1)
 print(obj.v2) 
 
 
-class A:               #multiple inheritance
+class A:               #Multiple inheritance
     varA = "welcome to class A"
 class B:
     varB = "welcome to class B"              
@@ -31,3 +31,26 @@ class C(A,B):
 car1 = C()
 print(car1.varC)
 print(car1.varA) 
+
+
+class Parent:          #Hierarchical inheritance
+    b = 8
+    c = 9
+class Child1(Parent):
+    a = 5
+    b = 7   
+class Child2(Parent):
+    pass
+obj = Child1()
+print(obj.b)
+
+
+class A:           #Hybrid inheritance
+    pass
+class B(A):
+    pass
+class C(B):
+    pass
+class D(C, B):
+    pass
+print(D.mro())
