@@ -6,3 +6,17 @@ class child(parent):
     a=40
 obj=child()
 print(obj.a)
+
+
+class A:           #Multi-level Inheritance
+    v1 = 4
+    v2 = 8
+class B(A):
+    v3 = 8
+    v4 = 16
+class C(B):
+    v3 = 0
+    v1 = 6
+obj = C()
+print(obj.v1)
+print(obj.v2)  
