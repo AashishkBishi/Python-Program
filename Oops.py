@@ -19,4 +19,15 @@ class C(B):
     v1 = 6
 obj = C()
 print(obj.v1)
-print(obj.v2)  
+print(obj.v2) 
+
+
+class A:               #multiple inheritance
+    varA = "welcome to class A"
+class B:
+    varB = "welcome to class B"              
+class C(A,B):
+    varC = "welcome to class C"
+car1 = C()
+print(car1.varC)
+print(car1.varA) 
