@@ -55,5 +55,26 @@ class D(C, B):
     pass
 print(D.mro())
 
-output:[<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
+Output:[<class '__main__.D'>, <class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
 Mro stand as Method resolving order. This method gives the order of execution of class and methods in the form of list.
+
+
+    
+from abc import ABC, abstractmethod            #Abstraction
+class Vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
+class Car(Vehicle):
+    def start(self):
+        print("Car starts with key")
+class Bike(Vehicle):
+    def start(self):
+        print("Bike starts with kick")
+c = Car()
+c.start()
+b = Bike()
+b.start() 
+
+Output: Car starts with key
+        Bike starts with kick
