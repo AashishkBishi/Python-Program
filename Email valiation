@@ -1,0 +1,6 @@
+import re
+s='spider02@gmail.com'
+if re.match(r'^[a-zA-Z0-9]+@gmail\.com$',s) and '__' not in s and len(s)<=20:
+    print('valid')
+else:
+    print('not') 
